@@ -1,0 +1,36 @@
+{% extends 'main/base.html' %}
+{% load static }
+{% block title %}Profile{% endblock %}
+
+{% block body%}
+<div class="container alert alert-success my-2">
+    {% if user_data.username == request.session.user %}
+    <h2>Welcome <span style="color:#DC3545;">{{user_data.username}}</span> !</h2>
+    {% else %}
+    <h2 style="color:#DC3545;">{{user_data.username}}</h2>
+    {% endif %}
+</div>
+
+<div class="container alert alert-success my-2">
+    {% if user_posts %}
+    {% for post in user_posts%}
+    <div class="card">
+        <div class="card-body">
+            <h2>{{post.title}}</h2>
+            <p>{{post.desc}}</p>
+            <a href="{{MEDIA_URL}}/{{post.file_field.url}}" target="_blank" class="btn btn-outline-warning">View</a>
+            <a href="{{MEDIA_URL}}/{{post.file_field.url}}" download class="btn btn-outline-info">Download</a>
+            {% if user_data.username == request.session.user %}
+            <a href="{% url 'delete' post.id %}" class="btn btn-outline-danger" style="float:right;">Delete</a>
+            {% endif %}
+        </div>
+    </div>
+
+    {% endfor %}
+    {% else %}
+    <div class="container">
+        <h2>No Posts Yet.</h2>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
