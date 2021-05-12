@@ -10,12 +10,13 @@
         <div class="card-body">
             <h5 class="card-title">{{post.title}}</h5>
             <p class="card-text">{{post.desc}}</p>
+            <p>Date/Time: <span id="datetime">{{post.file_date}}</span></p>
 
             {% if request.session.user %}
             <a href="{{MEDIA_URL}}/{{post.file_field.url}}" class="btn btn-warning" target="_blank">View</a>
             <a href="{{MEDIA_URL}}/{{post.file_field.url}}" class="btn btn-info mx-4" download>Download</a>
             {% else %}
-            <a href="#">You Have To Login Before Download this File.</a>
+            <a href="#">You Have To Login to download this File.</a>
             {% endif %}
         </div>
     </div>
