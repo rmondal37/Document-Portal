@@ -3,6 +3,7 @@ from django.views.generic.list import ListView
 from .models import User, Post
 from django.http import HttpResponse
 from django.contrib import messages
+import datetime
 
 
 # Create your views here.
@@ -12,8 +13,8 @@ class HomePageView(ListView):
         If user request get method in url direct than reach home page.
         '''
         all_posts = Post.objects.all().order_by('-id')
-        param = {'posts': all_posts}
-        return render(request, 'main/home.html', param)
+        post_dict = {'posts': all_posts}
+        return render(request, 'main/home.html', post_dict)
 
     def post(self, request):
         '''
@@ -44,6 +45,7 @@ class UploadView(ListView):
         filename = request.FILES['filename']
         title = request.POST['title']
         desc = request.POST['desc']
+        #file_date = datetime.datetime.now()
 
         user_obj = User.objects.get(username=user_name)
         upload_post = Post(user=user_obj,

@@ -15,6 +15,7 @@ class Post(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     file_field = models.FileField(upload_to='uploads/')
+    file_date = models.DateTimeField(auto_now=True)
     desc = models.TextField()
 
     def __str__(self):

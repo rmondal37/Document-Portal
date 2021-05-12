@@ -1,5 +1,5 @@
 {% extends 'main/base.html' %}
-{% load static }
+{% load static % }
 {% block title %}Profile{% endblock %}
 
 {% block body%}
@@ -18,6 +18,7 @@
         <div class="card-body">
             <h2>{{post.title}}</h2>
             <p>{{post.desc}}</p>
+            <p>{{post.file_date}}</p>
             <a href="{{MEDIA_URL}}/{{post.file_field.url}}" target="_blank" class="btn btn-outline-warning">View</a>
             <a href="{{MEDIA_URL}}/{{post.file_field.url}}" download class="btn btn-outline-info">Download</a>
             {% if user_data.username == request.session.user %}
