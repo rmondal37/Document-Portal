@@ -1,0 +1,1 @@
+web: gunicorn docu_portal.wsgi
