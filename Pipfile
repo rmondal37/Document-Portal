@@ -8,6 +8,7 @@ Django = "==2.1"
 Pillow = "*"
 gunicorn = "*"
 django-heroku = "*"
+whitenoise = "*"
 
 [dev-packages]
 yapf = "*"

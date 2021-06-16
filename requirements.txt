@@ -2,3 +2,4 @@ django==2.1
 pillow
 gunicorn
 django-heroku
+whitenoise
