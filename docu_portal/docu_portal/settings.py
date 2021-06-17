@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -50,7 +49,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'docu_portal.urls'
@@ -74,8 +72,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'docu_portal.wsgi.application'
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
@@ -133,6 +129,3 @@ STATICFILES_DIRS = [
 # for Media
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = 'home/media/'
-
-# Activate Django-Heroku.
-django_heroku.settings(locals())
