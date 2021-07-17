@@ -4,8 +4,23 @@ A portal for IIT Guwahati students and professors where they can upload files, a
 A running instance of the web application can be found [here](http://rmondal.pythonanywhere.com/).
 
 ## Requirements:
-  - Run `pipenv install -r requirements.txt` to install the dependencies for this project.
-  - Next, run `python manage.py runserver` to run the server locally on your machine. 
+
+- To run the project locally on your machine, first clone the project locally:
+  ```
+  git clone https://github.com/rmondal37/Document-Portal
+  ```
+- Next, to install the dependencies for the project, run the following command:
+
+  ```
+  pipenv install -r requirements.txt
+  ```
+
+- Next, to run the server locally on your machine, run the following command:
+
+  ```
+  python manage.py runserver
+  ```
+
 <br/>
 <br/>
 <p align="center">
