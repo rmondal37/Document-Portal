@@ -1,6 +1,6 @@
 # Document-Portal
 
-A portal where users can upload files, and other users can search for their profiles and download their files.
+A portal for IIT Guwahati students and professors where they can upload files, and other users can search for their profiles and download their files.
 A running instance of the web application can be found [here](http://rmondal.pythonanywhere.com/).
 
 * Requirements:
