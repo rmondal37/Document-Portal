@@ -9,6 +9,6 @@ A running instance of the web application can be found [here](http://rmondal.pyt
   <br/>
 <br/>
 <p align="center">
-  <img width="460" height="300" src="https://media.giphy.com/media/OCt9pAQ6x7Vsq6bMRq/giphy.gif">
+  <img src="https://media.giphy.com/media/OCt9pAQ6x7Vsq6bMRq/giphy.gif">
 </p>
 <!-- &nbsp;&nbsp;<div><img src="https://media.giphy.com/media/OCt9pAQ6x7Vsq6bMRq/giphy.gif" /></div> -->
