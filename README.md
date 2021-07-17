@@ -21,7 +21,8 @@ A running instance of the web application can be found [here](http://rmondal.pyt
   python manage.py runserver
   ```
 
-<br/>
+## Demo:
+
 <br/>
 <p align="center">
   <img src="https://media.giphy.com/media/OCt9pAQ6x7Vsq6bMRq/giphy.gif">
