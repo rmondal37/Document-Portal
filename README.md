@@ -3,6 +3,16 @@
 A portal for IIT Guwahati students and professors where they can upload files, and other users can search for their profiles and download their files.
 A running instance of the web application can be found [here](http://rmondal.pythonanywhere.com/).
 
+
+## Project Members:
+
+1. Rishav Mondal https://github.com/rmondal37
+
+2. Siddhart Charan https://github.com/Siddharth2808
+
+3. Ekeshwar Gowla https://github.com/ekeshwar610
+
+4. Shrey Verma https://github.com/shreyv25
 ## Requirements:
 
 - To run the project locally on your machine, first clone the project locally:
