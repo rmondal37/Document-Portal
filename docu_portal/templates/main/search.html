@@ -4,7 +4,7 @@
 {% block body%}
 
 <div class="container alert alert-success my-2">
-    <h2>Search Results For: <span style="color: #DC3545;">{{query}}</span></h2>
+    <h2>Search Results For: <span style="color: #DC3545;">{{query|safe}}</span></h2>
 </div>
 
 
@@ -43,7 +43,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h2>{{post.title}}</h2>
-                            <p>{{post.desc}}</p>
+                            <p>{{post.desc|safe}}</p>
                             <a href="{{MEDIA_URL}}/{{post.file_field.url}}" target="_blank"
                                 class="btn btn-outline-warning">View</a>
                             <a href="{{MEDIA_URL}}/{{post.file_field.url}}" download
